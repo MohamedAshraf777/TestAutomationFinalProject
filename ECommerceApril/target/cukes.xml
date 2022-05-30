@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="204.002">
+<testcase classname="Registration | User could Sign Up  with valid data" name="User Could sign up with valid data" time="17.483">
+<system-out><![CDATA[Given User Click on Register Link...........................................passed
+When User Could Select His Gender...........................................passed
+And User Could Enter His Name...............................................passed
+And User Could Select His Date of Birth.....................................passed
+And User Could Enter Valid Email "Test@test.com"............................passed
+And User Could Enter Company Name...........................................passed
+And User Could Enter Password 2 times "Q1w2e3r4"............................passed
+And User Could Click on Register Button.....................................passed
+Then User could Sign Up successfully........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login | User should be able to login with Valid Credential" name="User Could Login with valid credentials" time="12.86">
+<system-out><![CDATA[Given User Click on Login Link..............................................passed
+When User Enter Email and Pass= "Test@test.com" and "Q1w2e3r4"..............passed
+And User Could Click on Login Button........................................passed
+Then User could login successfully..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Currency | User Could Convert between Currencies" name="User Could Convert between Currencies to know Product Price" time="9.348">
+<system-out><![CDATA[Given User Check Current Currency...........................................passed
+When User Could Change Value of Current Currency from Select List...........passed
+Then User Change Product Price Currency Successfully........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | User could search for any product" name="User Could search for products by Name" time="9.428">
+<system-out><![CDATA[Given User Could Write "Nokia" in Search Box................................passed
+When User Could Click on Search Button......................................passed
+Then User could Confirm Results of His Search...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | User could search for any product" name="User search for any products by Using SKU" time="10.456">
+<system-out><![CDATA[Given User Could Write "AP_MBP_13" in Search Box............................passed
+When User Could Click on Search Button......................................passed
+Then User Could Confirm Numbers of items Diplayed...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hover Category | User could Hover on Category To Select Sub-Category" name="User could Hover on Category To Select Sub-Category" time="11.388">
+<system-out><![CDATA[Given User Could Hover on Menu Items........................................passed
+When User Could Click on Sub Category Phones................................passed
+Then User Could Open Sub Category Page Successfully.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Slider | User could click on slider in home Page" name="User Could Click on First Slider Nokia" time="10.229">
+<failure message="The following asserts failed:&#10;&#9;Un Successfully Step to go Nokia Page  expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When User Could Click on Nokia Slider.......................................passed
+Then User Redirect to Nokia Page Successfully...............................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	Un Successfully Step to go Nokia Page  expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at step_definitions.D06_homeSlider.nokiaPageDisplayed(D06_homeSlider.java:32)
+	at ✽.User Redirect to Nokia Page Successfully(file:///C:/Users/mohamed.ashraf/IdeaProjects/ECommerceApril/src/main/resources/feature/F06_homeSlider.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Slider | User could click on slider in home Page" name="User Could Click on Second Slider IPhone" time="11.009">
+<failure message="The following asserts failed:&#10;&#9;Un Successfully Step to go IPhone Page  expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When User Could Click on IPhone Slider......................................passed
+Then User Redirect to IPhone Page Successfully..............................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	Un Successfully Step to go IPhone Page  expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at step_definitions.D06_homeSlider.iPhonePageDisplayed(D06_homeSlider.java:51)
+	at ✽.User Redirect to IPhone Page Successfully(file:///C:/Users/mohamed.ashraf/IdeaProjects/ECommerceApril/src/main/resources/feature/F06_homeSlider.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="Follow us | Open All Follow Us Links And Switch between Them" name="User Open Facebook Link" time="11.477">
+<system-out><![CDATA[When User Click on facebook icon............................................passed
+Then FaceBook is Opened in New tab..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us | Open All Follow Us Links And Switch between Them" name="User Open Twitter Link" time="14.539">
+<system-out><![CDATA[When User Click on Twitter icon.............................................passed
+Then Twitter is Opened in New tab...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us | Open All Follow Us Links And Switch between Them" name="User Open Rss Link" time="11.673">
+<failure message="The following asserts failed:&#10;&#9;expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[When User Click on Rss icon.................................................passed
+Then Rss is Opened in New tab...............................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at step_definitions.D07_followUS.openRssTab(D07_followUS.java:67)
+	at ✽.Rss is Opened in New tab(file:///C:/Users/mohamed.ashraf/IdeaProjects/ECommerceApril/src/main/resources/feature/F07_followUs.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="Follow us | Open All Follow Us Links And Switch between Them" name="User Open YouTube Link" time="12.566">
+<system-out><![CDATA[When User Click on YouTube icon.............................................passed
+Then YouTube is Opened in New tab...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="WishList | User could add products to wishlist" name="User Could add a product to wishlist" time="27.931">
+<system-out><![CDATA[When User Add a Product to wishlist.........................................passed
+Then WishList Notification Displayed........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="WishList | User could add products to wishlist" name="Number of items in WishList Increase after adding a product" time="33.111">
+<failure message="element click intercepted: Element &lt;span class=&quot;wishlist-label&quot;&gt;...&lt;/span&gt; is not clickable at point (961, 22). Other element would receive the click: &lt;p class=&quot;content&quot;&gt;...&lt;/p&gt;&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.2.0', revision: '86eb611648'&#10;System info: host: 'NMG-PUB-L-00291', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3ef6cab7a1ad5dd54b8255417532900, clickElement {id=ea89470b-2e82-4c37-a429-e0b7c11e0cff}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\MOHAME~1.ASH\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61341/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (a3ef6cab7a1ad5dd54b8255417532900)] -&gt; class name: wishlist-label]&#10;Session ID: a3ef6cab7a1ad5dd54b8255417532900" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When User Add a Product to wishlist.........................................passed
+Then WishList Notification Displayed........................................passed
+And User Get Number of items in wish List After Adding a Product............passed
+Then Number of WishList Items Increased.....................................passed
+And User Go to WishList page................................................failed
+And Count Numbers of quantities.............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="wishlist-label">...</span> is not clickable at point (961, 22). Other element would receive the click: <p class="content">...</p>
+  (Session info: chrome=102.0.5005.63)
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'NMG-PUB-L-00291', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3ef6cab7a1ad5dd54b8255417532900, clickElement {id=ea89470b-2e82-4c37-a429-e0b7c11e0cff}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\MOHAME~1.ASH\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61341/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a3ef6cab7a1ad5dd54b8255417532900)] -> class name: wishlist-label]
+Session ID: a3ef6cab7a1ad5dd54b8255417532900
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at step_definitions.D08_wishList.clickWishlist(D08_wishList.java:72)
+	at ✽.User Go to WishList page(file:///C:/Users/mohamed.ashraf/IdeaProjects/ECommerceApril/src/main/resources/feature/F08_wishList.feature:12)
+]]></failure>
+</testcase>
+</testsuite>
